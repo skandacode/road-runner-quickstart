@@ -119,6 +119,7 @@ public class TeleopPIDS extends LinearOpMode {
             dashboard.sendTelemetryPacket(packet);
 
             double loop = System.nanoTime();
+            telemetry.addData("Lift sensor", lift.getDistance());
             telemetry.addData("hz ", 1000000000 / (loop - loopTime));
             loopTime = loop;
             telemetry.update();
