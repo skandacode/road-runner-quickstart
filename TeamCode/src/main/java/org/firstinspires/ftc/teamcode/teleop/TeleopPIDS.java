@@ -26,7 +26,6 @@ public class TeleopPIDS extends LinearOpMode {
     Servo hangservo;
     Servo droneservo;
     DcMotor hang;
-
     public static double intakespeed=0.4;
 
     @Override
@@ -48,7 +47,7 @@ public class TeleopPIDS extends LinearOpMode {
         while (opModeInInit()){
             lift.setPower(-0.1);
         }
-
+        lift.resetEncoder();
         waitForStart();
         double loopTime=0.0;
         lift.resetEncoder();

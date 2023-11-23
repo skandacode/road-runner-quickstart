@@ -1,6 +1,7 @@
 repositories {
     mavenCentral()
     google() // Needed for androidx
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -19,6 +20,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
 
     implementation 'com.github.StateFactory-Dev:StateFactory:v0.3.1'
-    implementation 'com.acmerobotics.dashboard:dashboard:0.4.12'
+    implementation 'com.acmerobotics.dashboard:dashboard:0.4.14'
 }
 
